@@ -59,10 +59,12 @@ public class PriceRecord {
 	
 	
 	@Column(name = "excluded_by_critical_analyses")
-	private Boolean excludedByCriticalAnalysis;
+	private Boolean excludedByCriticalAnalyses;
 	
 	@Column(name = "exclusion_justification", columnDefinition = "TEXT")
 	private String exclusionJustification;
 	
+	@Column(name = "item_description", columnDefinition = "LONGTEXT")
+	private String itemDescription;
 	
 }
